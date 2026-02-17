@@ -18,13 +18,13 @@ export default function ServiceCard({ title, description, icon, delay = 0 }: Ser
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay }}
             whileHover={{ y: -5 }}
-            className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-white/10 transition-colors duration-300"
+            className="p-8 rounded-2xl bg-white shadow-sm border border-gray-200 hover:border-primary hover:shadow-md transition-all duration-300"
         >
-            <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6 text-primary">
+            <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 text-primary">
                 {icon}
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
-            <p className="text-gray-400 leading-relaxed">
+            <h3 className="text-xl font-bold text-gray-900 mb-3">{title}</h3>
+            <p className="text-gray-600 leading-relaxed">
                 {description}
             </p>
         </motion.div>

@@ -24,7 +24,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/70">
+                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                             We Build Intelligent Digital Systems That Scale Your Business
                         </h1>
                     </motion.div>
@@ -33,7 +33,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="mt-6 text-lg leading-8 text-gray-300"
+                        className="mt-6 text-lg leading-8 text-gray-600"
                     >
                         Custom web platforms, mobile applications, and AI-powered solutions designed to automate operations, increase revenue, and future-proof your business.
                     </motion.p>
@@ -53,7 +53,7 @@ export default function Hero() {
                         </Link>
                         <Link
                             href="/portfolio"
-                            className="text-sm font-semibold leading-6 text-white hover:text-primary transition-colors flex items-center gap-x-2"
+                            className="text-sm font-semibold leading-6 text-gray-900 hover:text-primary transition-colors flex items-center gap-x-2"
                         >
                             View Our Work
                             {/* <PlayCircle className="h-5 w-5" /> */}

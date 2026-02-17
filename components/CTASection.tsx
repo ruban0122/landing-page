@@ -8,10 +8,10 @@ export default function CTASection() {
         <section className="py-24 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 -z-10" />
             <div className="max-w-4xl mx-auto text-center px-4">
-                <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70 mb-6">
+                <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
                     Ready to Transform Your Business with Intelligent Technology?
                 </h2>
-                <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
                     Don't let inefficient systems hold you back. Let's build the future of your company together.
                 </p>
                 <Link

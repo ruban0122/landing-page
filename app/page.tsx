@@ -61,10 +61,10 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Most Businesses Are Losing Revenue Due to Inefficient Systems
             </h2>
-            <div className="space-y-4 text-gray-400 text-lg mb-8 text-left max-w-xl mx-auto">
+            <div className="space-y-4 text-gray-600 text-lg mb-8 text-left max-w-xl mx-auto">
               <p className="flex items-center"><span className="text-red-500 mr-2">✖</span> Manual processes slow down operations</p>
               <p className="flex items-center"><span className="text-red-500 mr-2">✖</span> Poor user experience reduces conversions</p>
               <p className="flex items-center"><span className="text-red-500 mr-2">✖</span> No automation means higher costs</p>
@@ -78,11 +78,11 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-24 bg-white/5">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white">Our Services</h2>
-            <p className="text-gray-400 mt-4">Comprehensive digital solutions for your business</p>
+            <h2 className="text-3xl font-bold text-gray-900">Our Services</h2>
+            <p className="text-gray-600 mt-4">Comprehensive digital solutions for your business</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -106,15 +106,15 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white">Our Process</h2>
-            <p className="text-gray-400 mt-4">How we bring your vision to life</p>
+            <h2 className="text-3xl font-bold text-gray-900">Our Process</h2>
+            <p className="text-gray-600 mt-4">How we bring your vision to life</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
-              <div key={index} className="relative p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-primary/50 transition-colors">
+              <div key={index} className="relative p-6 bg-white rounded-2xl border border-gray-200 hover:border-primary/50 transition-colors shadow-sm">
                 <div className="text-sm font-bold text-primary mb-2">{step.step}</div>
-                <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                <p className="text-gray-400">{step.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
               </div>
             ))}
           </div>
@@ -122,26 +122,26 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-white/5">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Why Choose Us</h2>
-              <p className="text-gray-400 mb-8">We don't just write code; we build partners specific solutions that drive real growth.</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Us</h2>
+              <p className="text-gray-600 mb-8">We don't just write code; we build partners specific solutions that drive real growth.</p>
               <ul className="space-y-4">
                 {reasons.map((reason, index) => (
-                  <li key={index} className="flex items-center text-gray-300">
+                  <li key={index} className="flex items-center text-gray-700">
                     <span className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center text-primary mr-3 text-sm">✓</span>
                     {reason}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="relative h-full min-h-[400px] rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 border border-white/10 flex items-center justify-center p-8">
+            <div className="relative h-full min-h-[400px] rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-gray-200 flex items-center justify-center p-8">
               {/* Abstract visual or placeholder for an image */}
               <div className="text-center">
-                <Layout className="h-24 w-24 text-white/50 mx-auto mb-4" />
-                <p className="text-white/70 font-mono text-sm">High Performance Architecture</p>
+                <Layout className="h-24 w-24 text-gray-400 mx-auto mb-4" />
+                <p className="text-gray-600 font-mono text-sm">High Performance Architecture</p>
               </div>
             </div>
           </div>

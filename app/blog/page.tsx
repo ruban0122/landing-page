@@ -62,24 +62,24 @@ export default async function BlogPage() {
         <div className="bg-background min-h-screen pt-24 pb-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl font-bold text-white mb-4">Latest Insights</h1>
-                    <p className="text-gray-400">Trends, strategies, and technology updates for forward-thinking businesses.</p>
+                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Latest Insights</h1>
+                    <p className="text-gray-600">Trends, strategies, and technology updates for forward-thinking businesses.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {posts.map((post) => (
                         <Link href={`/blog/${post.slug}`} key={post.id} className="group">
-                            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
-                                <div className="aspect-video bg-gray-800 w-full relative">
+                            <div className="bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden hover:border-primary hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                                <div className="aspect-video bg-gray-100 w-full relative">
                                     {/* Placeholder for cover image */}
-                                    <div className="absolute inset-0 flex items-center justify-center text-gray-600 bg-gradient-to-br from-gray-800 to-gray-900">
+                                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gradient-to-br from-gray-100 to-gray-200">
                                         {post.cover_image ? (
                                             <img src={post.cover_image} alt={post.title} className="w-full h-full object-cover" />
                                         ) : (
-                                            <span className="text-4xl opacity-20">Image</span>
+                                            <span className="text-4xl opacity-40">Image</span>
                                         )}
                                     </div>
-                                    <div className="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                                    <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                                         {post.category || 'Tech'}
                                     </div>
                                 </div>
@@ -87,10 +87,10 @@ export default async function BlogPage() {
                                     <div className="text-sm text-gray-500 mb-3">
                                         {new Date(post.published_at).toLocaleDateString()}
                                     </div>
-                                    <h2 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                                    <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                                         {post.title}
                                     </h2>
-                                    <p className="text-gray-400 text-sm line-clamp-3 mb-4 flex-grow">
+                                    <p className="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
                                         {post.excerpt}
                                     </p>
                                     <span className="text-primary font-medium text-sm flex items-center mt-auto">

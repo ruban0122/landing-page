@@ -34,31 +34,31 @@ export default function PortfolioPage() {
         <div className="bg-background min-h-screen pt-24 pb-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl font-bold text-white mb-4">Our Recent Work</h1>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Recent Work</h1>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
                         Explore how we've helped businesses transform their digital presence and operations.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project) => (
-                        <div key={project.id} className="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300">
-                            <div className="aspect-video bg-gray-800 relative flex items-center justify-center">
-                                <span className="text-white/20 text-4xl font-bold">Project Image</span>
-                                <div className="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                        <div key={project.id} className="group bg-white shadow-sm border border-gray-200 rounded-2xl overflow-hidden hover:border-primary hover:shadow-md transition-all duration-300">
+                            <div className="aspect-video bg-gray-100 relative flex items-center justify-center">
+                                <span className="text-gray-400 text-4xl font-bold">Project Image</span>
+                                <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                                     {project.category}
                                 </div>
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                                     {project.title}
                                 </h3>
-                                <p className="text-gray-400 mb-4 text-sm line-clamp-3">
+                                <p className="text-gray-600 mb-4 text-sm line-clamp-3">
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.technologies.map((tech, idx) => (
-                                        <span key={idx} className="bg-white/10 text-gray-300 text-xs px-2 py-1 rounded">
+                                        <span key={idx} className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
                                             {tech}
                                         </span>
                                     ))}

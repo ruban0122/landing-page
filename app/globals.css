@@ -1,16 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0a0a0a;
-  --color-foreground: #ededed;
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
 
-  --color-primary: #8b5cf6;
+  --color-primary: #7c3aed; /* Slightly darker violet for better contrast on white */
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #3b82f6;
+  --color-secondary: #2563eb; /* Stronger blue */
   --color-secondary-foreground: #ffffff;
 
   --color-accent: #db2777;
+
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #6b7280;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+
+  --color-border: #e5e7eb;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -22,8 +30,8 @@
 
 @layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #0a0a0a;
   }
 
   html {
@@ -47,13 +55,13 @@
   h6 {
     font-weight: 700;
     letter-spacing: -0.025em;
-    color: #fff;
+    color: #111827;
     margin-bottom: 1rem;
   }
 
   p {
-    color: #d1d5db;
-    /* gray-300 */
+    color: #4b5563;
+    /* gray-600 */
     margin-bottom: 1.5rem;
   }
 
@@ -69,15 +77,15 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0a0a0a;
+    background: #f3f4f6;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #4b5563;
+    background: #d1d5db;
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #6b7280;
+    background: #9ca3af;
   }
 }

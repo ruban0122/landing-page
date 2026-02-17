@@ -71,10 +71,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <span className="inline-block bg-primary/20 text-primary text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4">
                         {post.category || "Article"}
                     </span>
-                    <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                         {post.title}
                     </h1>
-                    <time className="text-gray-400 text-sm">
+                    <time className="text-gray-600 text-sm">
                         {formatDate(post.published_at)}
                     </time>
                 </div>
@@ -86,11 +86,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 )}
 
                 <div
-                    className="prose prose-invert prose-lg max-w-none text-gray-300"
+                    className="prose prose-lg max-w-none text-gray-700"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
 
-                <div className="mt-16 border-t border-white/10 pt-8">
+                <div className="mt-16 border-t border-gray-200 pt-8">
                     <CTASection />
                 </div>
             </div>

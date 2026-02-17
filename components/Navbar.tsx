@@ -51,7 +51,7 @@ export default function Navbar() {
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"
-                            className="bg-foreground/5 inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-white hover:bg-foreground/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                            className="bg-foreground/5 inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-gray-900 hover:bg-foreground/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                         >
                             <span className="sr-only">Open main menu</span>
                             {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
